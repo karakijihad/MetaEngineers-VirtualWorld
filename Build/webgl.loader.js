@@ -17,8 +17,7 @@ function createUnityInstance(e,r,t){function n(e,t){if(!n.aborted&&r.showBanner)
     }
   }function d(e){return new Promise(function(r,t){i(e);var o=c.companyName&&c.productName?new c.XMLHttpRequest({companyName:c.companyName,productName:c.productName,cacheControl:c.cacheControl(c[e
         ])
-      }):new XMLHttpRequest;o.open("GET",c[e
-      ]+"?raw=true"),o.responseType="arraybuffer",o.addEventListener("progress",function(r){i(e,r)
+      }):new XMLHttpRequest;o.open("GET","https://media.githubusercontent.com/media/karakijihad/MetaEngineers-VirtualWorld/main/Build/webgl.data"),o.responseType="arraybuffer",o.addEventListener("progress",function(r){i(e,r)
       }),o.addEventListener("load",function(t){i(e,t),r(new Uint8Array(o.response))
       }),o.addEventListener("error",function(r){var t="Failed to download file "+c[e
         ];"file:"==location.protocol?n(t+". Loading web pages via a file:// URL without a web server is not supported by this browser. Please use a local development web server to host Unity content, or use the Unity Build and Run option.",
